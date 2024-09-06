@@ -1,0 +1,10 @@
+<library>
+    <book>
+        <title>Effective Java</title>
+        <author>Joshua Bloch</author>
+        <isbn>978-0134685991</isbn>
+        <publicationYear>2018</publicationYear>
+        <publisher>Addison-Wesley</publisher>
+        <price>45.00</price>
+    </book>
+</library>

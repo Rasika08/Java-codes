@@ -1,0 +1,65 @@
+package com.parse;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.*;
+
+public class Parsing {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc = builder.parse("src/new.xml");
+			
+//			getting the root Element
+			Element rootElement = doc.getDocumentElement();
+			
+			
+			
+//			rootElement.getTagName();
+//			rootElement.getTextContent();
+//			rootElement.getNodeName();
+//			getNodeValue();
+//			rootElement.TEXT_NODE  checks weather the node contains text
+			
+			NodeList nodes = doc.getElementsByTagName("book");
+			
+			for(int i =0; i<nodes.getLength(); i++) {
+				
+				Element ele = (Element) nodes.item(i);
+				
+				String title = ele.getElementsByTagName("title").item(i).getTextContent();
+				String author = ele.getElementsByTagName("author").item(i).getTextContent();
+				
+				 System.out.println("Book " + (i + 1) + ":");
+	                System.out.println("\tTitle: " + title);
+	                System.out.println("\tAuthor: " + author);
+
+				
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+            e.printStackTrace();
+        }
+		
+		
+	}
+
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>Effective Java</title>
+        <author>Joshua Bloch</author>
+        <isbn>978-0134685991</isbn>
+        <publicationYear>2018</publicationYear>
+        <publisher>Addison-Wesley</publisher>
+        <price>45.00</price>
+    </book>
+    <book>
+        <title>Java Concurrency in Practice</title>
+        <author>Brian Goetz</author>
+        <isbn>978-0321349606</isbn>
+        <publicationYear>2006</publicationYear>
+        <publisher>Addison-Wesley</publisher>
+        <price>55.00</price>
+    </book>
+    <book>
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <isbn>978-0132350884</isbn>
+        <publicationYear>2008</publicationYear>
+        <publisher>Prentice Hall</publisher>
+        <price>50.00</price>
+    </book>
+    <book>
+        <title>Head First Design Patterns</title>
+        <author>Eric Freeman</author>
+        <isbn>978-0596007126</isbn>
+        <publicationYear>2004</publicationYear>
+        <publisher>O'Reilly Media</publisher>
+        <price>40.00</price>
+    </book>
+    <book>
+        <title>Introduction to Algorithms</title>
+        <author>Thomas H. Cormen</author>
+        <isbn>978-0262033848</isbn>
+        <publicationYear>2009</publicationYear>
+        <publisher>MIT Press</publisher>
+        <price>89.95</price>
+    </book>
+    <book>
+        <title>The Pragmatic Programmer</title>
+        <author>Andrew Hunt</author>
+        <isbn>978-0201616224</isbn>
+        <publicationYear>1999</publicationYear>
+        <publisher>Addison-Wesley</publisher>
+        <price>42.00</price>
+    </book>
+    <book>
+        <title>Design Patterns</title>
+        <author>Erich Gamma</author>
+        <isbn>978-0201633615</isbn>
+        <publicationYear>1994</publicationYear>
+        <publisher>Addison-Wesley</publisher>
+        <price>54.99</price>
+    </book>
+    <book>
+        <title>Refactoring</title>
+        <author>Martin Fowler</author>
+        <isbn>978-0201485677</isbn>
+        <publicationYear>1999</publicationYear>
+        <publisher>Addison-Wesley</publisher>
+        <price>47.00</price>
+    </book>
+    <book>
+        <title>Artificial Intelligence: A Modern Approach</title>
+        <author>Stuart Russell</author>
+        <isbn>978-0136042594</isbn>
+        <publicationYear>2009</publicationYear>
+        <publisher>Prentice Hall</publisher>
+        <price>99.00</price>
+    </book>
+    <book>
+        <title>Computer Networks</title>
+        <author>Andrew S. Tanenbaum</author>
+        <isbn>978-0132126953</isbn>
+        <publicationYear>2010</publicationYear>
+        <publisher>Prentice Hall</publisher>
+        <price>75.00</price>
+    </book>
+</library>

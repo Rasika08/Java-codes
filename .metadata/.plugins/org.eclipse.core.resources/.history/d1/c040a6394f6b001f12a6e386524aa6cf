@@ -1,0 +1,75 @@
+package com.parse;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.*;
+
+public class Parsing {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc = builder.parse("src/new.xml");
+			
+//			getting the root Element
+			Element rootElement = doc.getDocumentElement();
+			
+			
+			
+//			rootElement.getTagName();
+//			rootElement.getTextContent();
+//			rootElement.getNodeName();
+//			getNodeValue();
+//			rootElement.TEXT_NODE  checks weather the node contains text
+			
+			NodeList nodes = doc.getElementsByTagName("book");
+			
+			for(int i =0; i<nodes.getLength(); i++) {
+				
+				Element ele = (Element) nodes.item(0);
+				
+				String title = ele.getElementsByTagName("title").item(0).getTextContent();
+				String author = ele.getElementsByTagName("author").item(0).getTextContent();
+				String isbn = ele.getElementsByTagName("isbn").item(0).getTextContent();
+                String publicationYear = ele.getElementsByTagName("publicationYear").item(0).getTextContent();
+                String publisher = ele.getElementsByTagName("publisher").item(0).getTextContent();
+                String price = ele.getElementsByTagName("price").item(0).getTextContent();
+                
+				 System.out.println("Book " + (i + 1) + ":");
+	                System.out.println("\tTitle: " + title);
+	                System.out.println("\tAuthor: " + author);
+	                System.out.println("\tAuthor: " + author);
+	                System.out.println("\tISBN: " + isbn);
+	                System.out.println("\tPublication Year: " + publicationYear);
+	                System.out.println("\tPublisher: " + publisher);
+	                System.out.println("\tPrice: " + price);
+	                System.out.println();
+
+				
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+            e.printStackTrace();
+        }
+		
+		
+	}
+
+}
